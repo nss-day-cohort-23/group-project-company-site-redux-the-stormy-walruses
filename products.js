@@ -3,7 +3,7 @@ let productsArr = [
         name: "Thermal Fleece",
         image: "hp-images/walrus_fleece.jpg",
         description: "Base layer for day hikes and cool evenings",
-        price: '$30'
+        price: '$40'
     },
     {
         name: "One-piece Husk-Flex Wetsuit",
@@ -14,20 +14,20 @@ let productsArr = [
     {
         name: "Walrus All-weatherproof Backpack",
         image: "hp-images/backpack.jpg",
-        description: "Base layer for day hikes and cool evenings",
-        price: '$50'
+        description: "Durable nylon and premium walrus-free leather trimmings",
+        price: '$70'
     },
     {
         name: "Casual Town Beanie",
         image: "hp-images/beanie.jpg",
-        description: "Base layer for day hikes and cool evenings",
-        price: '$20'
+        description: "Never leave the coast without this vintage staple",
+        price: '$25'
     },
     {
-        name: "Thermal Fleece",
-        image: "hp-images/walrus_fleece.jpg",
+        name: "Form-fitting Flipper Mitts",
+        image: "hp-images/walrus-mitts.jpg",
         description: "Base layer for day hikes and cool evenings",
-        price: '$20'
+        price: '$30'
     },
     {
         name: "Thermal Fleece",
@@ -40,5 +40,5 @@ let productsArr = [
 let output = document.getElementById('products');
 
 for (i=0;i<productsArr.length;i++){
-    output.innerHTML += "<article class='product'><header>" + productsArr[i].name + "</header><section class='desc'>" + "<img src='" + productsArr[i].image + "'><p>" + productsArr[i].description + "</p></section><footer>" + productsArr[i].price + "</footer></article>";
+    output.innerHTML += "<article class='product'><header>" + productsArr[i].name + "</header><section class='desc'>" + "<img src='" + productsArr[i].image + "'><p>" + productsArr[i].description + "</p></section><div id='productFoot'>" + productsArr[i].price + "</div></article>";
 }
