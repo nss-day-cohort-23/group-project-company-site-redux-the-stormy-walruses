@@ -10,9 +10,12 @@ body {
     background-image: url("img/ice-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: auto;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: "Quiksand", Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 
@@ -150,4 +153,157 @@ footer input, button {
 footer button {
     border: 1px solid black;
     margin-left: 5px;
+}
+
+/* ------------------------------
+        MEDIA QUERY
+-------------------------------*/
+
+@media (min-width: 600px) {
+    nav {
+      justify-content: flex-end;
+    }
+
+    i {
+        padding-left: 8px;
+        padding-right: 8px;
+        transform: translate(0, 3.5px)
+    }
+
+    body {
+        background-size: 100% 100%;
+    }
+
+    #index-hero {
+        width: 100%;
+        height: 400px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    #flag {
+        width: 45px;
+        height: 25px;
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: translate(0, 6px);
+    }
+
+    .country {
+        font-size: 15px;
+    }
+
+    footer form {
+        width: 80%;
+        padding-left: 12%;
+    }
+
+    .footer-item.country {
+        text-align: center;
+    }
+
+    .footer-copy-wrap {
+        float: right;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 850px) {
+    #two-left {
+        width: 55%;
+        float: left;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    #two-right {
+        width: 35%;
+        float: right;
+        line-height: 1.2;
+    }
+
+    footer {
+        width: 100%;
+        height: 220px;
+        background-color: rgb(221, 221, 221);
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #flag {
+        width: 60px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: translate(0, 10px);
+    }
+    
+    .footer-copy-wrap {
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+    }
+    
+    .footer-copy-wrap a {
+        display: block;
+        font-size: 16px;
+    }
+    
+    footer form {
+        width: 80%;
+        padding-left: 12%;
+    }
+    
+    footer input {
+        height: auto;
+        width: 60%;
+    }
+    
+    footer input, button {
+        display: inline;
+    }
+    
+    footer button {
+        border: 1px solid black;
+        margin-left: 5px;
+    }
+
+    .country {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1050px) {
+    #index-hero {
+        width: 100%;
+        height: 550px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    #main-text {
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    #two-left {
+        width: 55%;
+        float: left;
+        line-height: 1.6;
+        font-size: 22px;
+    }
+    #two-right {
+        width: 35%;
+        line-height: 1.5;
+        font-size: 16px;
+    }
 }
