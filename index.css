@@ -58,10 +58,6 @@ nav a.desktop-right {
     max-height: 50px;
 }
 
-#push-logo {
-    transform: translate(0, 9px);    
-}
-
 .logo-item {
     order: 1;
     align-self: flex-end;  
@@ -134,7 +130,7 @@ main blockquote {
     background-color: blue; 
     color: white;
     cursor: pointer;
-    padding: 5px;
+    padding: 4px;
     border-radius: 100%;
     box-shadow: 1px 1px 4px rgb(58, 57, 57);
 }
@@ -284,7 +280,7 @@ footer button {
         background-color: blue; 
         color: white;
         cursor: pointer;
-        padding: 5px;
+        padding: 5px 1px;
         border-radius: 100%;
     }
     
@@ -298,6 +294,10 @@ footer button {
 }
     
 @media (min-width: 850px) {
+
+    #push-logo {
+        transform: translate(0, 9px);
+    }
 
     .logo-item {
         order: -1;
