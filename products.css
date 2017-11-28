@@ -74,13 +74,21 @@ main {
     padding-bottom: 20px;
 }
 
+#index-title {
+    transform: translate(0, -202px);
+    font-size: 50px;
+    margin-bottom: -100px;
+    font-family: "Kaushan Script";
+    color:white;
+}
+
 main blockquote {
     border-left: 5px solid blue;
     padding-left: 15px;
 }
 
 #giftIcon {
-    opacity: .89;
+    opacity: .6;
     height: 24em;
 }
 
@@ -209,6 +217,13 @@ footer button {
     }
     .product {
         margin-bottom: 5em;
+    }
+    #index-title {
+        transform: translate(0, -160px);
+        font-size: 50px;
+        margin-bottom: -100px;
+        font-family: "Kaushan Script";
+        color: white;
     }
 }
 
@@ -352,6 +367,14 @@ footer button {
 
     .country {
         font-size: 20px;
+    }
+    #index-title {
+        transform: translate(0%, -334px);
+        font-size: 120px;
+        margin-bottom: -245px;
+        font-family: "Kaushan Script";
+        color: rgba(255,255,255,1);
+        /* position: absolute; */
     }
 }
 
