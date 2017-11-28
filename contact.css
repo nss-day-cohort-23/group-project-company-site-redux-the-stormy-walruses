@@ -1,97 +1,6 @@
-
-nhtml, body {
+html, body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    box-sizing: border-box;
-    text-align: center;
-    background-color: white;
-    background-image: url("img/ice-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-i {
-    padding-left: 6px;
-    transform: translate(0, 4.5px)
-}
-
-/* ------------------------------
-        NAVIGATION
--------------------------------*/
-
-nav {
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(221, 221, 221);   
-}
-
-nav a {
-    font-size: 17px;
-}
-
-#feature-sale {
-    display: block;
-    width: 100%;
-    background-color: rgb(247, 245, 245);
-    padding: 10px 0;
-    font-style: italic;
-}
-
-#logo {
-    max-width: 50px;
-    max-height: 50px;
-    transform: translate(0, -7px);
-}
-
-.logo-item {
-    order: 1;
-    align-self: flex-end;    
-}
-
-#logo:hover {
-    transform: scale(1.2, 1.1);
-    transition-duration: 1s;
-}
-
-
-/* ------------------------------
-        MAIN CONTENT
--------------------------------*/
-
-form {
-    margin: 0 auto;
-    width: 400px;
-    padding-top: 200px;
-}
-
-input {
-    width: 100%;
-    font-size: 18pt;
-}
-
-label {
-    width: 100%;
-    color: white;
-    font-size: 20px;
-}
-
-textarea {
-    width: 100%;
-    height: 100%;
-    font-size: 18pt;
 }
 
 body {
@@ -107,20 +16,102 @@ body {
     flex-direction: column;
     font-family: "Quiksand", Arial, Helvetica, sans-serif;
     font-size: 15px;
-    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+i {
+    padding-left: 6px;
+    transform: translate(0, 4.5px)
 }
 
 main {
     background-color: rgba(48, 45, 45, 0.4);
-    width: 95%;
+    height: 90%;
+    padding-top: 10px;
+}
+
+/* ------------------------------
+        NAVIGATION
+-------------------------------*/
+
+nav {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(221, 221, 221);   
+}
+
+nav a.desktop-right {
+    font-size: 17px;
+}
+
+#feature-sale {
+    display: block;
+    width: 100%;
+    background-color: rgb(247, 245, 245);
+    padding: 10px 0;
+    font-style: italic;
+}
+
+#logo {
+    max-width: 50px;
+    max-height: 50px;
+    transform: translate(0, 9px);
+}
+
+.logo-item {
+    order: 1;
+    align-self: flex-end;  
+    transform: translate(0, -10px);  
 }
 
 
+/* ------------------------------
+        MAIN CONTENT
+-------------------------------*/
+
+form {
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 80px;
+}
+
+main p {
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+
+input {
+    width: 100%;
+    font-size: 18pt;
+    margin: 10px 0;
+}
+
+label {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    margin: 10px 0;
+}
 
 #contact {
-    padding-top: 200px;
     margin-bottom: -50px;
-    font-size: 24px;
+    font-size: 34px;
     color: white;
 }
 
@@ -129,8 +120,8 @@ main {
     color: white;
 }
 
-#alert, #alert1 {
-    color: black;
+#alert {
+    color: white;
     font-weight: bold;
     font-size: 20px;
 }
@@ -147,14 +138,50 @@ main {
     display: none;
 }
 
+#contact-walrus {
+    height: 60%;
+    width: 60%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+
+/* ------------------------------
+        JUMP BUTTON
+-------------------------------*/
+
+#jump-button {
+    display: none; 
+    position: fixed; 
+    bottom: 50px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: blue; 
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 4px rgb(58, 57, 57);
+}
+
+#jump-button:hover {
+    background-color: rgb(69, 69, 212); /* Add a dark-grey background on hover */
+}
+
+#up-arrow {
+    transform: translateX(-3px);
+}
+
 
 /* ------------------------------
         FOOTER
 -------------------------------*/
 
-footer {
-    width: 100%;
-    height: 175px;
+#footer-form {
+    width: 80%;
+    height: 50px;
     background-color: rgb(221, 221, 221);
     padding-top: 10px;
     text-align: center;
@@ -166,6 +193,7 @@ footer {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: rgb(221, 221, 221);
 }
 
 #flag {
@@ -204,54 +232,211 @@ footer button {
     margin-left: 5px;
 }
 
-footer {
-    width: 100%;
-    height: 175px;
-    background-color: rgb(221, 221, 221);
-    padding-top: 10px;
-    text-align: center;
+/* ------------------------------
+        MEDIA QUERY
+-------------------------------*/
+
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    nav a.desktop-right {
+        font-size: 17px;
+        min-width: 150px;
+    }
+
+    .logo-item {
+        order: -1;
+        align-self: flex-start;
+        margin-right: 60%;
+        transform: translate(0, 10px);  
+    }
+
+    i {
+        padding-left: 8px;
+        padding-right: 8px;
+        transform: translate(0, 3.5px)
+    }
+
+    body {
+        background-size: 100% 100%;
+    }
+
+    #index-hero {
+        width: 100%;
+        height: 400px;
+    }
+
+    #flag {
+        width: 45px;
+        height: 25px;
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: translate(0, 6px);
+    }
+
+    .country {
+        font-size: 15px;
+    }
+
+    footer form {
+        width: 80%;
+        padding-left: 12%;
+        margin-left: -50px;
+    }
+
+    .footer-item.country {
+        text-align: center;
+    }
+
+    .footer-copy-wrap {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+    
+    /* ------------------------------
+    JUMP BUTTON
+    -------------------------------*/
+    
+    #jump-button {
+        display: none; 
+        position: fixed; 
+        bottom: 50px; 
+        right: 30px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: blue; 
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 100%;
+    }
+    
+    #jump-button:hover {
+        background-color: rgb(69, 69, 212); /* Add a dark-grey background on hover */
+    }
+    
+    #up-arrow {
+        transform: translate(0, -0.5px);
+    }
+}
+    
+@media (min-width: 850px) {
+
+    .logo-item {
+        order: -1;
+        align-self: flex-start;
+        transform: translate(0, 3px);  
+        margin-right: 63%; 
+    }
+
+
+    nav a.desktop-right {
+        font-size: 17px;
+        min-width: 190px;
+    }
+
+
+    #two-left {
+        width: 55%;
+        float: left;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    #two-right {
+        width: 35%;
+        float: right;
+        line-height: 1.2;
+    }
+
+    footer {
+        width: 100%;
+        height: 220px;
+        background-color: rgb(221, 221, 221);
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #flag {
+        width: 60px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: translate(0, 10px);
+    }
+    
+    .footer-copy-wrap {
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+    }
+    
+    .footer-copy-wrap a {
+        display: block;
+        font-size: 16px;
+    }
+    
+    footer form {
+        width: 80%;
+        padding-left: 12%;
+    }
+    
+    footer input {
+        height: auto;
+        width: 60%;
+    }
+    
+    footer input, button {
+        display: inline;
+    }
+    
+    footer button {
+        border: 1px solid black;
+        margin-left: 5px;
+    }
+
+    .country {
+        font-size: 20px;
+    }
 }
 
+@media (min-width: 1050px) {
+    #index-hero {
+        width: 100%;
+        height: 550px;
+    }
 
-.footer-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    #contact-walrus {
+        width: 50%;
+        height: 30%;
+    }
 
-#flag {
-    width: 30px;
-    height: 20px;
-    margin-right: 10px;
-    margin-top: 5px;
-}
+    #main-text {
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+    }
 
-.footer-copy-wrap {
-    width: 80%;
-    height: 80%;
-    padding-left: 30px;
-}
-
-.footer-copy-wrap a {
-    display: block;
-}
-
-footer form {
-    width: 80%;
-    padding-left: 35px;
-}
-
-footer input {
-    height: auto;
-    width: 60%;
-}
-
-footer input, button {
-    display: inline;
-}
-
-footer button {
-    border: 1px solid black;
-    margin-left: 5px;
+    #two-left {
+        width: 55%;
+        float: left;
+        line-height: 1.6;
+        font-size: 22px;
+    }
+    #two-right {
+        width: 35%;
+        line-height: 1.5;
+        font-size: 16px;
+    }
 }
