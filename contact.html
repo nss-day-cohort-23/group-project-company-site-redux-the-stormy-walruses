@@ -12,7 +12,6 @@
 
 </head>
 <body>
-<main>
 <header>
     <div id="feature-sale">
         <a href="products.html">Free shipping on orders over $25</a>
@@ -20,9 +19,10 @@
     <nav>
         <a href="index.html" class="logo-item"><img src="img/logo.png" id="logo" alt="Company logo of a walrus face"></a>
         <a href="products.html"><h2>Products<i class="material-icons">shopping_basket</i></h2></a>
-       <!-- <a href="contact.html"><h2>Contact Us<i class="material-icons">contact_mail</i></h2></a>-->
+       <a href="contact.html"><h2>Contact Us<i class="material-icons">contact_mail</i></h2></a>
     </nav>
 </header>
+<main>
 
     <p id="contact">CONTACT US</p>
 
@@ -51,6 +51,14 @@
 
     </form>
 
+    <div id="contact-sub">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quam iure inventore officiis consequatur, in laboriosam voluptatibus illum asperiores tenetur error dolorem delectus praesentium! Ullam voluptas natus cum corrupti ex. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam animi, velit voluptate architecto omnis reiciendis eos hic quam saepe deserunt perferendis ducimus delectus corrupti enim eligendi dolorem adipisci accusamus facilis!</p>
+    </div>
+
+    <img src="img/contact-walrus.jpg" id="contact-walrus" alt="A cute walrus">
+
+    <button onclick="toTop()" id="jump-button" title="Jump-to-top"><i class="material-icons" id="up-arrow">keyboard_arrow_up</i></button>
+    
 </main>
 
 <footer>
@@ -66,13 +74,13 @@
                 <a href="#">Adopt a Walrus</a>
                 <a href="#">Contact Us</a>                
             </p>
-            <form action="#" method="post">
+            <form action="#" id="footer-form" method="post">
                 <input name="emailaddress" id="footer-email-signup" class="email-address" type="email" placeholder="Sign Up For Walrus Mail">
                 <button>Submit</button>
             </form>
         </div>
     </div>
 </footer>
-    
+<script src="scrollbutton.js"></script>
 </body>
 </html>
