@@ -79,6 +79,15 @@ main blockquote {
     padding-left: 15px;
 }
 
+#giftIcon {
+    opacity: .89;
+    height: 24em;
+}
+
+#hero-box {
+    height: 25em;
+}
+
 #index-hero {
     width: 100%;
     height: 200px;
@@ -98,28 +107,39 @@ main blockquote {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 2em 2em;
+    padding-bottom: 0.5em; 
 }
 
 /* individual cards */
 .product {
-    margin-bottom: 2em;
-    background-color: rgba(0,0,0,.4);
+    margin-bottom: 7.5em;
+    background-color: rgba(240,250,255,.28);
+    background-color: rgba(40,50,55,.7);
     box-shadow: 0 1px 1.2em 0 rgba(27, 27, 27, 0.2);
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 5%;
+    font-family: monospace;
+    font-size: 1.1em;   
+}
+.product header {
+    padding: 7px 0px;
 }
 .product:hover{
     box-shadow: 0 1.5em 2em rgba(12, 12, 12, 0.7);
+    cursor: pointer;
 }
 .desc{
     width: min-content;    
 }
 #products p{
-    padding: 0 8%;
+    padding: 0 10%;
+    margin: .78em .5em;
 }
 #products img{
     width: 330px;
     height: 330px;
+    border-radius: 5%;
 }
 #products footer {
     text-align: center;
@@ -174,4 +194,169 @@ footer input, button {
 footer button {
     border: 1px solid black;
     margin-left: 5px;
+}
+
+
+/* ------------------------------
+        MEDIA QUERY
+-------------------------------*/
+@media (max-width: 600px){
+    #giftIcon {
+        height: 14em;
+    }
+    #products {
+        margin-top: -10em;
+    }
+}
+
+@media (min-width: 600px) {
+    nav {
+        justify-content: flex-end;
+    }
+
+    i {
+        padding-left: 8px;
+        padding-right: 8px;
+        transform: translate(0, 3.5px)
+    }
+    body {
+        background-size: 100% 100%;
+    }
+
+    #index-hero {
+        width: 100%;
+        height: 520px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    #flag {
+        width: 45px;
+        height: 25px;
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: translate(0, 6px);
+    }
+
+    .country {
+        font-size: 15px;
+    }
+
+    footer form {
+        width: 80%;
+        padding-left: 12%;
+    }
+
+    .footer-item.country {
+        text-align: center;
+    }
+
+    .footer-copy-wrap {
+        float: right;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 850px) {
+    #two-left {
+        width: 55%;
+        float: left;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    #two-right {
+        width: 35%;
+        float: right;
+        line-height: 1.2;
+    }
+
+    footer {
+        width: 100%;
+        height: 220px;
+        background-color: rgb(221, 221, 221);
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #flag {
+        width: 60px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: translate(0, 10px);
+    }
+    
+    .footer-copy-wrap {
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+    }
+    .footer-copy-wrap a {
+        display: block;
+        font-size: 16px;
+    }
+    
+    footer form {
+        width: 80%;
+        padding-left: 12%;
+    }
+    
+    footer input {
+        height: auto;
+        width: 60%;
+    }
+    
+    footer input, button {
+        display: inline;
+    }
+    
+    footer button {
+        border: 1px solid black;
+        margin-left: 5px;
+    }
+
+    .country {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1050px) {
+    #index-hero {
+        width: 100%;
+        height: 550px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    #main-text {
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    #two-left {
+        width: 55%;
+        float: left;
+        line-height: 1.6;
+        font-size: 22px;
+    }
+    #two-right {
+        width: 35%;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+}
+@media (min-width: 1390px) {
+    #products {
+        margin: 0% 1.7%;
+    }
 }
