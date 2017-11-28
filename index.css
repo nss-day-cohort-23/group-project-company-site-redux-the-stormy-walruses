@@ -56,13 +56,20 @@ nav a.desktop-right {
 #logo {
     max-width: 50px;
     max-height: 50px;
-    transform: translate(0, 9px);
+}
+
+#push-logo {
+    transform: translate(0, 9px);    
 }
 
 .logo-item {
     order: 1;
     align-self: flex-end;  
-    transform: translate(0, -10px);  
+}
+
+#logo:hover {
+    transform: scale(-1, 1);    
+    transition-duration: 1s; 
 }
 
 
@@ -83,6 +90,7 @@ main {
     margin-bottom: -100px;
     font-family: "Kaushan Script";
     color:white;
+    text-shadow: 3px 3px 10px black;
 }
 
 main blockquote {
@@ -400,7 +408,7 @@ footer button {
     }
 
     #index-title {
-        transform: translate(0, -420px);
+        transform: translate(0, -450px);
         font-size: 120px;
         margin-bottom: -200px;
         font-family: "Kaushan Script";
