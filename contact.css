@@ -1,0 +1,257 @@
+
+nhtml, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    background-image: url("img/ice-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+i {
+    padding-left: 6px;
+    transform: translate(0, 4.5px)
+}
+
+/* ------------------------------
+        NAVIGATION
+-------------------------------*/
+
+nav {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);   
+}
+
+nav a {
+    font-size: 17px;
+}
+
+#feature-sale {
+    display: block;
+    width: 100%;
+    background-color: rgb(247, 245, 245);
+    padding: 10px 0;
+    font-style: italic;
+}
+
+#logo {
+    max-width: 50px;
+    max-height: 50px;
+    transform: translate(0, -7px);
+}
+
+.logo-item {
+    order: 1;
+    align-self: flex-end;    
+}
+
+#logo:hover {
+    transform: scale(1.2, 1.1);
+    transition-duration: 1s;
+}
+
+
+/* ------------------------------
+        MAIN CONTENT
+-------------------------------*/
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding-top: 200px;
+}
+
+input {
+    width: 100%;
+    font-size: 18pt;
+}
+
+label {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+}
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    background-image: url("img/ice-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Quiksand", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+
+main {
+    background-color: rgba(48, 45, 45, 0.4);
+    width: 95%;
+}
+
+
+
+#contact {
+    padding-top: 200px;
+    margin-bottom: -50px;
+    font-size: 24px;
+    color: white;
+}
+
+.button button {
+    background-color:black;
+    color: white;
+}
+
+#alert, #alert1 {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#box {
+    border: 1px solid black;
+    float: right;
+    margin-right: 80px;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+
+/* ------------------------------
+        FOOTER
+-------------------------------*/
+
+footer {
+    width: 100%;
+    height: 175px;
+    background-color: rgb(221, 221, 221);
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.footer-copy-wrap {
+    width: 80%;
+    height: 80%;
+    padding-left: 30px;
+}
+
+.footer-copy-wrap a {
+    display: block;
+}
+
+footer form {
+    width: 80%;
+    padding-left: 35px;
+}
+
+footer input {
+    height: auto;
+    width: 60%;
+}
+
+footer input, button {
+    display: inline;
+}
+
+footer button {
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 175px;
+    background-color: rgb(221, 221, 221);
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.footer-copy-wrap {
+    width: 80%;
+    height: 80%;
+    padding-left: 30px;
+}
+
+.footer-copy-wrap a {
+    display: block;
+}
+
+footer form {
+    width: 80%;
+    padding-left: 35px;
+}
+
+footer input {
+    height: auto;
+    width: 60%;
+}
+
+footer input, button {
+    display: inline;
+}
+
+footer button {
+    border: 1px solid black;
+    margin-left: 5px;
+}
